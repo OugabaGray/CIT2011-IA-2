@@ -1,0 +1,74 @@
+<!--
+Ougaba Gray
+2405837
+Individual Assesstment 2
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MangaShop | Login</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+<header>
+  <div class="nav container">
+    <div class="brand"><span class="logo">MS</span><span>MangaShop<span>
+  </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+  <section class="hero" style="padding-bottom:0">
+    <h1>Welcome back</h1>
+    <p>Sign in to continue your journey through worlds of ink and imagination.</p>
+  </section>
+
+  <section class="auth">
+    <div class="auth-card">
+      <div class="auth-side" aria-hidden="true">
+        <div class="auth-art" role="img" aria-label="Stylized manga halftone background"></div>
+        <h2 class="auth-tagline">Read. Collect. Escape.</h2>
+      </div>
+
+      <form class="auth-form" action="index.html" method="get" novalidate>
+        <h2 class="auth-title">Sign in</h2>
+
+        <label class="label" for="email">Email or Username</label>
+        <input class="input" id="email" name="email" type="text" placeholder="e.g: JohnDoe@gmail.com or John_Doe" autocomplete="username" required>
+
+        <label class="label" for="password">Password</label>
+        <input class="input" id="password" name="password" type="password" placeholder="Your password" autocomplete="current-password" required>
+
+        <div class="auth-row">
+          <label class="check">
+            <input type="checkbox" name="remember"> <span>Remember me</span>
+          </label>
+          <a class="auth-link" href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn auth-submit" type="submit">Sign in</button>
+
+        <p class="auth-meta">New here?
+          <a class="auth-link" href="register.html">Create an account</a>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="container" style="opacity:.85; padding-bottom:40px">
+  © 2025 MangaShop | Ougaba Gray | All Rights Reserved
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>

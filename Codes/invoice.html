@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MangaShop | Invoice</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="nav container">
+    <div class="brand">
+      <span class="logo">MS</span>
+      <span>MangaShop</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container" aria-label="Invoice" style="padding-top:24px; padding-bottom:40px;">
+
+  <!-- Top invoice header strip-->
+  <section class="invoice-header">
+    <div>
+      <h1>Order Invoice</h1>
+      <p class="muted">Thank you for shopping with MangaShop.</p>
+    </div>
+    <div class="invoice-meta">
+      <p><strong>Invoice #:</strong> <span id="invoice-number">MS-0001</span></p>
+      <p><strong>Date:</strong> <span id="invoice-date">-</span></p>
+    </div>
+  </section>
+
+  <!-- Billing & Shipping panels -->
+  <section class="row-2" style="margin-top:4px;">
+    <div class="panel">
+      <h2>Billing To</h2>
+      <p id="billing-details">
+        Customer Name<br>
+        customer@example.com<br>
+        123-456-7899
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>Shipping Address</h2>
+      <p>
+        89 Wayever Youfrom<br>
+        Kingston, St. Andrew<br>
+        Jamaica
+      </p>
+    </div>
+  </section>
+
+  <!-- Order items table -->
+  <section class="panel" style="margin-top:20px;">
+    <h2>Order Items</h2>
+    <table class="table">
+      <caption class="muted" style="caption-side: bottom; padding:10px 0 0">
+        Prices shown in JMD.
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Price</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Sub-total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Will be replaced by JS -->
+        <tr>
+          <td>Sample Item</td>
+          <td class="num">J$ 0</td>
+          <td>1</td>
+          <td class="num">J$ 0</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Payment summary-->
+  <section class="panel" style="margin-top:20px;">
+    <h2>Payment Summary</h2>
+
+    <div class="totals" aria-label="Order summary">
+      <div class="totals-row">
+        <span>Items Subtotal</span>
+        <span>-</span>
+      </div>
+      <div class="totals-row">
+        <span>Discount</span>
+        <span>None</span>
+      </div>
+      <div class="totals-row">
+        <span>Shipping</span>
+        <span>-</span>
+      </div>
+      <div class="totals-row">
+        <span>Tax (15%)</span>
+        <span>-</span>
+      </div>
+      <div class="totals-row total">
+        <span>Total</span>
+        <span>-</span>
+      </div>
+    </div>
+
+    <div class="actions" style="margin-top:16px;">
+      <button class="btn" id="btn-print">Confirm &amp; Print</button>
+      <a class="btn" href="shop.html">Close</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container" style="opacity:.85; padding-bottom:0; margin-top:16px;">
+  © 2025 MangaShop | Ougaba Gray | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
